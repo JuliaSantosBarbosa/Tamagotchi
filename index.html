@@ -22,7 +22,7 @@
 
                         //quantidade de imagens na pasta de animação
 
-                        var quant = [6]
+                        var quant = [41]
 
                         document.addEventListener("DOMContentLoaded", function() {
 
@@ -54,7 +54,7 @@
 
                                 targets[i-1].addEventListener("targetFound", event => {
 
-                                    const trgt = parseInt(event.target.id.charAt(6));
+                                    const trgt = parseInt(event.target.id.charAt(41));
 
                                     maxCount = quant[trgt-1]
 
@@ -68,7 +68,7 @@
 
                                         vids[trgt-1].setAttribute("src","#video"+trgt+"_"+count);
 
-                                    },66); //modifique esse valor de 66 milissegundos para aumentar ou diminuir a velocidade do vídeo
+                                    },200); //modifique esse valor de 66 milissegundos para aumentar ou diminuir a velocidade do vídeo
 
                                 });
 
