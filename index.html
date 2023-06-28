@@ -30,9 +30,9 @@
                     const vids = [document.querySelector('#vid1')];
                     
                     // detect target found
-                    for (i=1;i<=41;i++) {
+                    for (i=1;i<=6;i++) {
                         targets[i-1].addEventListener("targetFound", event => {
-                            const trgt = parseInt(event.target.id.charAt(41));
+                            const trgt = parseInt(event.target.id.charAt(6));
                             maxCount = quant[trgt-1]
         
                             interval = setInterval(function () {
